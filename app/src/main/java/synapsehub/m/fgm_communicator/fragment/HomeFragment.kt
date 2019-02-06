@@ -1,6 +1,5 @@
 package synapsehub.m.fgm_communicator.fragment
 
-import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.os.Bundle

@@ -2,7 +2,6 @@ package synapsehub.m.fgm_communicator.fragment
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -14,16 +13,10 @@ import synapsehub.m.fgm_communicator.R
 import synapsehub.m.fgm_communicator.communicator.Communicator
 
 
-public class ReceiveFragment: Fragment() {
-
-    companion object {
-        lateinit var mctx:Context
-    }
+class ReceiveFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val myView=LayoutInflater.from(container!!.context).inflate(R.layout.fragment2,container,false)
-
-        mctx=container!!.context
         return myView
     }
 
@@ -41,13 +34,8 @@ public class ReceiveFragment: Fragment() {
             }
         })
         btn.setOnClickListener { view ->
-
+            //write some code here
         }
-    }
-
-
-    fun receiveText(data:String):String{
-        return data
     }
 
 }
